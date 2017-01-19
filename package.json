@@ -1,0 +1,42 @@
+{
+  "name": "react-native-build-utils",
+  "version": "1.0.0",
+  "description": "Build utils for react native",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib --ignore-path .gitignore",
+    "postinstall": "node scripts/postinstall"
+  },
+  "bin": {
+    "buildUtils": "./lib/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldylucks/react-native-build-utils.git"
+  },
+  "keywords": [
+    "react-native",
+    "gradle"
+  ],
+  "author": "goldylucks <adamgoldman7@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/goldylucks/react-native-build-utils/issues"
+  },
+  "homepage": "https://github.com/goldylucks/react-native-build-utils#readme",
+  "peerDependencies": {
+    "replace": "*"
+  },
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "git-scripts": "^0.2.1"
+  },
+  "git": {
+    "scripts": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
