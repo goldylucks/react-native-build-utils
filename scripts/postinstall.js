@@ -17,5 +17,5 @@ if (!fs.existsSync(path.resolve(utils.getRootPath(), '.gradleConfig'))) {
 }
 
 if (!fs.existsSync(path.resolve(utils.getRootPath(), 'android/app/src/main/res/mipmap-mdpi/ic_launcher_dev.png'))) {
-  execSync(`${__dirname}/../lib/icons.sh`, { stdio: [0, 1, 2] }2)
+  execSync(`${__dirname}/../lib/icons.sh`, { stdio: [0, 1, 2] })
 }
