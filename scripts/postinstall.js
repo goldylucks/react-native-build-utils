@@ -4,7 +4,7 @@ const { execSync } = require('child_process')
 const utils = require('../lib/utils')
 const packageJsonPath = path.resolve(utils.getRootPath(), 'package.json')
 
-if (!fs.existsSync(packageJsonPath)) {
+if (fs.existsSync(packageJsonPath)) {
   const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'))
   packageJson.scripts = packageJson.scripts || {}
   packageJson.scripts.buildUtils = 'buildUtils'
